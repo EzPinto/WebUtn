@@ -1,0 +1,72 @@
+.historia {
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1.3em;
+    padding-right: 2em;
+    background-color: rgba(153, 6, 6, 0.555);
+
+}
+
+.profesionales {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    font-size: 1.3em;
+    padding-left: 2.25em;
+    max-width: 960px;
+    overflow: hidden;
+    background-color: rgba(153, 6, 6, 0.555);
+}
+
+.profesional {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ccc;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.izquierda {
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+}
+
+.derecha {
+    flex-direction: row-reverse;
+    text-align: right;
+    align-items: right;
+    justify-content: left;
+}
+
+.foto_perfil {
+    background-color: white;
+    padding: 1.5px;
+    margin: 10px;
+    border-radius: 20%;
+    width: 200px;
+    height: 180px;
+}
+
+.name {
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+
+}
+
+.trabajo {
+    font-size: 1.1rem;
+    padding-top: 0px;
+    margin-top: 5px;
+
+}
+
+.parrafo_perfil {
+    font-size: 1.1rem;
+    padding: 5px;
+    text-align: justify;
+
+}
