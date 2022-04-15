@@ -6,8 +6,8 @@ const Header = (props) => {
         <header>
             <div className="holder">
                 <div className="logo">
-                    <img src="images/logo.jpg" width="100" alt="Logo" />
-                    <h1>La Sangre es Vida</h1>
+                    <a href='/'><img className="logo" src="images/logo.jpg" width="100" alt="Logo" /></a>
+                    <a href='/'><h1>La Sangre es Vida</h1></a>
                 </div>
             </div>
         </header>

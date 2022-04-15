@@ -7,6 +7,7 @@ import ContactoPage from './pages/ContactoPage';
 import HomePage from './pages/HomePage';
 import NosotrosPage from './pages/NosotrosPage';
 import InfoPage from './pages/InfoPage';
+import NovedadesPage from './pages/NovedadesPage';
 
 import "./App.css";
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" exact component={HomePage} />
         <Route path="/nosotros" exact component={NosotrosPage} />
         <Route path="/info" exact component={InfoPage} />
+        <Route path="/novedades" exact component={NovedadesPage} />
         <Route path="/contacto" exact component={ContactoPage} />
       </Switch>
       <Footer/>
