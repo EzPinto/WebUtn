@@ -15,6 +15,8 @@ router.get('/', async function(req, res, next) {
   });
 });
 
+// Agregar novedades
+
 router.get ("/agregar", (req, res, nect) => {
     res.render("admin/agregar", {
       layout: "admin/layout"
@@ -42,5 +44,43 @@ router.post("/agregar", async (req, res, next) => {
     })
   }
 })
+
+// Eliminar Novedades
+
+router.get("/eliminar/:id", async (req, res, next) => {
+  var id = req.params.id;
+  await novedadesModel.deleteNovedadById(id);
+  res.redirect("/admin/novedades")
+});
+
+// Modificar Novedades
+
+router.get("/modificar/:id", async (req, res, next) => {
+  let id = req.params.id;
+  let novedad = await novedadesModel.getNovedadById(id);
+  res.render("admin/modificar", {
+    layout: "admin/layout",
+    novedad
+  });
+});
+
+router.post("/modificar", async (req, res, next) => {
+  try {
+    let obj = {
+      titulo: req.body.titulo,
+      subtitulo: req.body.subtitulo,
+      cuerpo: req.body.cuerpo
+    }
+
+    await novedadesModel.modificarNovedadById(obj, req.body.id);
+    res.redirect("/admin/novedades");
+  } catch (error) {
+    console.log(error)
+    res.render("admin/modificar", {
+      layout: "admin/layout",
+      error: true, message: "No se modifico la novedad"
+    }); 
+  } // cierra catch
+}); // cierra funcion
 
 module.exports = router;
