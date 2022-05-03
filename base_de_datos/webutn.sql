@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 15-04-2022 a las 22:21:31
+-- Tiempo de generación: 03-05-2022 a las 14:28:40
 -- Versión del servidor: 5.7.36
 -- Versión de PHP: 7.4.26
 
@@ -33,19 +33,20 @@ CREATE TABLE IF NOT EXISTS `news` (
   `titulo` varchar(250) NOT NULL,
   `subtitulo` text NOT NULL,
   `cuerpo` text NOT NULL,
+  `img_id` char(250) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `news`
 --
 
-INSERT INTO `news` (`id`, `titulo`, `subtitulo`, `cuerpo`) VALUES
-(1, 'Doná sangre de forma segura - Es rápido e indoloro.', 'Próximas campañas voluntarias de donación de sangre con turnos programados. También en hospitales.', 'Próximas campañas de donación voluntaria de sangre, abiertas a la comunidad planificadas por la Red de Medicina Transfusional: \r\n\r\n- Domingo 3 de abril	Proyecto Damos (Juventud) en Fund. Hillel, O\'Higgins 1560	10.00 a 15.30 hs.\r\n\r\n-Martes 5 de abril	Escuela Prof. J. Weitzman, Varela 850	8.00 a 15.00 hs.	BA Salud y Comunidad Escuela Weitzman\r\n\r\n-Viernes 8 de abril	Hall Central de la Facultad de Ciencias Médicas (UBA), Paraguay 2155	9.30 a 15.00 hs.	BA Salud, Extensión Universitaria, UBA en Acción, UBA Medicina y CECIM'),
-(2, 'Sangre de forma segura - Es rápido e indoloro.', 'Próximas campañas voluntarias de donación de sangre con turnos programados. También en hospitales.', 'Próximas campañas de donación voluntaria de sangre, abiertas a la comunidad planificadas por la Red de Medicina Transfusional: \r\n\r\n- Domingo 3 de abril	Proyecto Damos (Juventud) en Fund. Hillel, O\'Higgins 1560	10.00 a 15.30 hs.\r\n\r\n-Martes 5 de abril	Escuela Prof. J. Weitzman, Varela 850	8.00 a 15.00 hs.	BA Salud y Comunidad Escuela Weitzman\r\n\r\n-Viernes 8 de abril	Hall Central de la Facultad de Ciencias Médicas (UBA), Paraguay 2155	9.30 a 15.00 hs.	BA Salud, Extensión Universitaria, UBA en Acción, UBA Medicina y CECIM'),
-(3, 'Borrarme', 'asd', '12312'),
-(4, 'asdasd', 'asdasdas', 'asdasdas'),
-(5, '5', 'asdadsa', 'asdasasdasdaasd');
+INSERT INTO `news` (`id`, `titulo`, `subtitulo`, `cuerpo`, `img_id`) VALUES
+(1, 'Doná sangre de forma segura - Es rápido e indoloro.', 'Próximas campañas voluntarias de donación de sangre con turnos programados. También en hospitales.', 'Próximas campañas de donación voluntaria de sangre, abiertas a la comunidad planificadas por la Red de Medicina Transfusional: \r\n\r\n- Domingo 3 de abril	Proyecto Damos (Juventud) en Fund. Hillel, O\'Higgins 1560	10.00 a 15.30 hs.\r\n\r\n-Martes 5 de abril	Escuela Prof. J. Weitzman, Varela 850	8.00 a 15.00 hs.	BA Salud y Comunidad Escuela Weitzman\r\n\r\n-Viernes 8 de abril	Hall Central de la Facultad de Ciencias Médicas (UBA), Paraguay 2155	9.30 a 15.00 hs.	BA Salud, Extensión Universitaria, UBA en Acción, UBA Medicina y CECIM', NULL),
+(2, 'Sangre de forma segura - Es rápido e indoloro.', 'Próximas campañas voluntarias de donación de sangre con turnos programados. También en hospitales.', 'Próximas campañas de donación voluntaria de sangre, abiertas a la comunidad planificadas por la Red de Medicina Transfusional: \r\n\r\n- Domingo 3 de abril	Proyecto Damos (Juventud) en Fund. Hillel, O\'Higgins 1560	10.00 a 15.30 hs.\r\n\r\n-Martes 5 de abril	Escuela Prof. J. Weitzman, Varela 850	8.00 a 15.00 hs.	BA Salud y Comunidad Escuela Weitzman\r\n\r\n-Viernes 8 de abril	Hall Central de la Facultad de Ciencias Médicas (UBA), Paraguay 2155	9.30 a 15.00 hs.	BA Salud, Extensión Universitaria, UBA en Acción, UBA Medicina y CECIM', ''),
+(3, 'Posta de Donacion 31/08', 'Hospital Naval', '12312', ''),
+(6, 'Posta de Donacion 31/05', 'Hospital de clinicas', 'asdasdasasdasdasasdasdasasdasdasasdasdasasdasdasasdasdas', 'ywdlbsyyhztu6upadkrn'),
+(8, 'Posta de Donacion 24/07', 'Hospital Garrahan', 'asdasdasdasssssssssssssssssssssssssdasdasdas', 'ggqge80ujo0wahxtgukq');
 
 -- --------------------------------------------------------
 

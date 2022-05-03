@@ -31,12 +31,27 @@
     width: 70%;
 }
 
-.formulario input [type="submit"] {
+.formulario button [type="submit"] {
+    margin-left: 100px;
     background-color: #6da9ed;
     box-shadow: 0 0 70px rgba(0,0,0,0.4);
     color: white;
     font-size: 1em;
     width: auto;
+    cursor: pointer;
+}
+
+.btn    {
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-left: 100px;
+    justify-content: center;
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    width: 70%;
     cursor: pointer;
 }
 
